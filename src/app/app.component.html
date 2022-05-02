@@ -1,6 +1,16 @@
 <mat-toolbar>Hello Za Worldo!</mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav></mat-sidenav>
+  <mat-sidenav mode="side" [opened]="true" [disableClose]="true" class="mat-elevation-z8">
+    <a routerLink="/"><button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button></a>
+    <mat-divider></mat-divider>
+    <a routerLink="/test"><button mat-button class="menu-button">
+      <mat-icon>help</mat-icon>
+      <span>Test</span>
+    </button></a>
+  </mat-sidenav>
   <mat-sidenav-content>
     <div class="content mat-elevation-z8">
       <router-outlet></router-outlet>
