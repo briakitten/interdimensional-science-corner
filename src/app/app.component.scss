@@ -1,3 +1,5 @@
+@use '@angular/material' as mat;
+
 mat-sidenav {
     margin: 16px;
     width: 200px;
@@ -18,7 +20,11 @@ mat-sidenav {
     justify-content: center;
     align-items: center;
 
-    font-size: 2rem;
+    color:aliceblue;
+}
+
+p {
+    font-size: 1rem;
 }
 
 mat-sidenav-container {
