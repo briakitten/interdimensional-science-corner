@@ -13,18 +13,10 @@ export class TestPage {
   }
 
   runScript() {
-    let sum = 2, value = 2, previousValue = 1;
+    let arr = [3, 6];
 
-    while (value + previousValue < 4000000) {
-      const a = value;
-      value = value + previousValue;
-      previousValue = a;
 
-      console.log(value.toString());
 
-      if (value % 2 == 0) sum += value;
-    }
-
-    this.scriptResult = sum.toString();
+    this.scriptResult = arr.toString();
   }
 }
